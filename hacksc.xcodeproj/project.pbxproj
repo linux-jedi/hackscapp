@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02B40E7EDEF88C2B3603C781 /* Pods_hacksc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CEEF90547CB6DA179DFBA61 /* Pods_hacksc.framework */; };
 		EF9DCBF5223502C300BB5A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DCBF4223502C300BB5A4D /* AppDelegate.swift */; };
 		EF9DCBF7223502C300BB5A4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DCBF6223502C300BB5A4D /* ViewController.swift */; };
 		EF9DCBFA223502C300BB5A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9DCBF8223502C300BB5A4D /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A19C209707EB5CE0892AE03 /* Pods-hacksc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hacksc.release.xcconfig"; path = "Target Support Files/Pods-hacksc/Pods-hacksc.release.xcconfig"; sourceTree = "<group>"; };
+		2CEEF90547CB6DA179DFBA61 /* Pods_hacksc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hacksc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4DB598C768549BCFE8E5FFD /* Pods-hacksc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hacksc.debug.xcconfig"; path = "Target Support Files/Pods-hacksc/Pods-hacksc.debug.xcconfig"; sourceTree = "<group>"; };
 		EF9DCBF1223502C300BB5A4D /* hacksc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hacksc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9DCBF4223502C300BB5A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9DCBF6223502C300BB5A4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02B40E7EDEF88C2B3603C781 /* Pods_hacksc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4498951BE137EFF89C53422E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CEEF90547CB6DA179DFBA61 /* Pods_hacksc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D73AD3DFADFDFAE097E599F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4DB598C768549BCFE8E5FFD /* Pods-hacksc.debug.xcconfig */,
+				2A19C209707EB5CE0892AE03 /* Pods-hacksc.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EF9DCBE8223502C200BB5A4D = {
 			isa = PBXGroup;
 			children = (
 				EF9DCBF3223502C300BB5A4D /* hacksc */,
 				EF9DCBF2223502C300BB5A4D /* Products */,
+				D73AD3DFADFDFAE097E599F4 /* Pods */,
+				4498951BE137EFF89C53422E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF9DCC03223502C400BB5A4D /* Build configuration list for PBXNativeTarget "hacksc" */;
 			buildPhases = (
+				2CC5658ECC4154344F84E313 /* [CP] Check Pods Manifest.lock */,
 				EF9DCBED223502C200BB5A4D /* Sources */,
 				EF9DCBEE223502C200BB5A4D /* Frameworks */,
 				EF9DCBEF223502C200BB5A4D /* Resources */,
+				6095C3C1DC20AB89A6FD97AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CC5658ECC4154344F84E313 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hacksc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6095C3C1DC20AB89A6FD97AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hacksc/Pods-hacksc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hacksc/Pods-hacksc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF9DCBED223502C200BB5A4D /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		EF9DCC04223502C400BB5A4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4DB598C768549BCFE8E5FFD /* Pods-hacksc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +373,7 @@
 		};
 		EF9DCC05223502C400BB5A4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A19C209707EB5CE0892AE03 /* Pods-hacksc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
