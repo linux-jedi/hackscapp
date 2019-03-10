@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		02B40E7EDEF88C2B3603C781 /* Pods_hacksc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CEEF90547CB6DA179DFBA61 /* Pods_hacksc.framework */; };
+		EF9036102235097A00825658 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90360F2235097A00825658 /* EventTableViewCell.swift */; };
+		EF9036122235126900825658 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9036112235126900825658 /* Event.swift */; };
 		EF9DCBF5223502C300BB5A4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DCBF4223502C300BB5A4D /* AppDelegate.swift */; };
 		EF9DCBF7223502C300BB5A4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9DCBF6223502C300BB5A4D /* ViewController.swift */; };
 		EF9DCBFA223502C300BB5A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9DCBF8223502C300BB5A4D /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 		2A19C209707EB5CE0892AE03 /* Pods-hacksc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hacksc.release.xcconfig"; path = "Target Support Files/Pods-hacksc/Pods-hacksc.release.xcconfig"; sourceTree = "<group>"; };
 		2CEEF90547CB6DA179DFBA61 /* Pods_hacksc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hacksc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4DB598C768549BCFE8E5FFD /* Pods-hacksc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hacksc.debug.xcconfig"; path = "Target Support Files/Pods-hacksc/Pods-hacksc.debug.xcconfig"; sourceTree = "<group>"; };
+		EF90360F2235097A00825658 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		EF9036112235126900825658 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		EF9DCBF1223502C300BB5A4D /* hacksc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hacksc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9DCBF4223502C300BB5A4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9DCBF6223502C300BB5A4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +58,6 @@
 				A4DB598C768549BCFE8E5FFD /* Pods-hacksc.debug.xcconfig */,
 				2A19C209707EB5CE0892AE03 /* Pods-hacksc.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +88,8 @@
 				EF9DCBFB223502C400BB5A4D /* Assets.xcassets */,
 				EF9DCBFD223502C400BB5A4D /* LaunchScreen.storyboard */,
 				EF9DCC00223502C400BB5A4D /* Info.plist */,
+				EF90360F2235097A00825658 /* EventTableViewCell.swift */,
+				EF9036112235126900825658 /* Event.swift */,
 			);
 			path = hacksc;
 			sourceTree = "<group>";
@@ -209,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9036122235126900825658 /* Event.swift in Sources */,
+				EF9036102235097A00825658 /* EventTableViewCell.swift in Sources */,
 				EF9DCBF7223502C300BB5A4D /* ViewController.swift in Sources */,
 				EF9DCBF5223502C300BB5A4D /* AppDelegate.swift in Sources */,
 			);
