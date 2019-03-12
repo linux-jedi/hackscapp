@@ -41,7 +41,7 @@ class EventTableViewCell: UITableViewCell {
     
     locationLabel.snp.makeConstraints {make in
       make.leading.equalTo(titleLabel)
-      make.top.equalTo(titleLabel).offset(10)
+      make.top.equalTo(titleLabel.snp.bottom).offset(10)
     }
 
     eventImage.frame = CGRect(x: 0, y: 0, width: 69, height: 69)

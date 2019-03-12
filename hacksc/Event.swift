@@ -18,10 +18,10 @@ class Event {
   var name: String
   var location: String
   var time: String
-  var image: UIImage
+  var image: UIImage?
   var type: EventType
   
-  init(name: String, location: String, time: String, image: UIImage, type: EventType) {
+  init?(name: String, location: String, time: String, image: UIImage?, type: EventType) {
     self.name = name
     self.location = location
     self.time = time
